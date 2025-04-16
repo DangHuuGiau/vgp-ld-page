@@ -238,7 +238,7 @@ export default function Subdivision() {
             <div className="mb-4">
               <div className="flex gap-4">
                 <Image
-                  src="/images/subdivision/BEVERLY-logo.webp"
+                  src="/images/subdivision/opus-logo-vgp.png"
                   alt="The Origami"
                   width={100}
                   height={100}
@@ -286,71 +286,6 @@ export default function Subdivision() {
           <div className="md:w-1/2 flex justify-center mt-6 md:mt-0">
             <Image
               src="/images/subdivision/THE-OPUS-ONE-vpg.png"
-              alt="The Origami Overview"
-              width={600}
-              height={400}
-            />
-          </div>
-        </div>
-      </div>
-      <div
-        className="relative text-white py-12 px-6 md:px-12 bg-cover bg-center"
-        style={{
-          backgroundImage: `url('images/subdivision/BG-vgp.jpg')`,
-        }}
-      >
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center relative z-10">
-          <div className="md:w-1/2 space-y-2">
-            <div className="mb-4">
-              <div className="flex gap-4">
-                <Image
-                  src="/images/subdivision/BEVERLY-logo.webp"
-                  alt="The Origami"
-                  width={100}
-                  height={100}
-                  className="inline-block"
-                />
-                <div className="border"></div>
-                <div className="italic">
-                  <h2 className="text-xl font-bold mt-2 text-yellow-500">
-                    THE BEVERLY
-                  </h2>
-                  <p className="text-sm font-semibold text-yellow-500">
-                    Phân khu cao cấp view đẹp nhất Vinhomes Grand Park
-                  </p>
-                </div>
-              </div>
-            </div>
-            <p className="text-stone-200 text-xs">
-              Phân khu căn hộ The Beverly được ví như “hoa hậu” của Vinhomes
-              Grand Park khi vừa tọa lạc ngay lõi trung tâm đô thị vừa sở hữu
-              tầm view tuyệt đẹp về công viên 36ha và sông Đồng Nai.
-            </p>
-            <p className="text-stone-200 text-xs">
-              Với thiết kế sang trọng, hiện đại và khác biệt nhất trong tất cả
-              các phân khu của Vinhomes Grand Park, cùng hàng ngàn tiện ích ngay
-              dưới thềm nhà đáp ứng tiêu chuẩn “Sống sang - View đẹp” của khách
-              hàng thượng lưu tại TP. HCM.
-            </p>
-            <p className="text-stone-200 text-xs">
-              The Beverly đang có chính sách hấp dẫn nhất năm, Mua nhà sang tặng
-              Xe đẹp - Học bổng Vinschool, cùng ưu đãi tiền tỷ, mua nhà hời nhất
-              năm. Hiện The Beverly đang đón cư dân về ở, khách hàng mua nhận
-              bàn giao ngay.
-            </p>
-            <div className="border"></div>
-            <p className=" text-stone-200 text-xs">
-              Giá bán: Từ 4,1 tỷ/căn (chưa trừ ưu đãi)
-            </p>
-            <div className="mt-6 flex space-x-4">
-              <button className="bg-yellow-500 text-red-700 font-bold py-2 px-4 rounded text-sm">
-                ĐĂNG KÝ TƯ VẤN DỰ ÁN
-              </button>
-            </div>
-          </div>
-          <div className="md:w-1/2 flex justify-center mt-6 md:mt-0 ">
-            <Image
-              src="/images/subdivision/THE-BEVERLY-vgp.webp"
               alt="The Origami Overview"
               width={600}
               height={400}
