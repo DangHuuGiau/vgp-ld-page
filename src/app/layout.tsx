@@ -15,9 +15,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Vinhomes Landing Page - Sale and Information",
+  title: "Vinhomes Grand Park - Đại đô thị đẳng cấp quốc tế",
   description:
-    "Discover the best deals, locations, and amenities of Vinhomes projects. Explore subdivisions, master plans, pricing, and partnerships.",
+    "Vinhomes Grand Park tọa lạc tại vị trí mặt tiền đường Nguyễn Xiển, phường Long Thạnh Mỹ, Quận 9, Tp Thủ Đức, TP Hồ Chí Minh.",
 };
 
 export default function RootLayout({
