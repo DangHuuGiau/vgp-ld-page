@@ -57,9 +57,11 @@ export default function LandscapeUtilities() {
             >
               {images.map((src, i) => (
                 <SwiperSlide key={i}>
-                  <img
+                  <Image
                     src={src}
                     alt={`Slide ${i}`}
+                    width={960}
+                    height={320}
                     className="w-full h-64 object-cover rounded-2xl"
                   />
                 </SwiperSlide>
