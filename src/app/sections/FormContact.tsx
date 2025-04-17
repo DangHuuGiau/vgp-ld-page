@@ -23,7 +23,7 @@ export default function DelayedContactForm() {
   };
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
   ) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
@@ -97,14 +97,25 @@ export default function DelayedContactForm() {
             className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
             required
           />
-          <textarea
+          <select
             name="productInterest"
-            placeholder="Quan tâm đến sản phẩm"
             value={formData.productInterest}
             onChange={handleChange}
-            className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-            rows={3}
-          />
+            className="p-3 rounded border border-gray-300 text-white bg-transparent w-full"
+          >
+            <option className="text-black" value="">
+              Quan tâm sản phẩm ...
+            </option>
+            <option className="text-black" value="1Pn+">
+              1 Phòng ngủ+
+            </option>
+            <option className="text-black" value="2Pn, 2Pn+">
+              2 Phòng ngủ, 2 Phòng ngủ+
+            </option>
+            <option className="text-black" value="3Pn">
+              3 Phòng ngủ
+            </option>
+          </select>
           <button
             type="submit"
             className="w-full bg-yellow-500 text-white font-bold py-3 px-6 rounded hover:bg-yellow-600 transition"

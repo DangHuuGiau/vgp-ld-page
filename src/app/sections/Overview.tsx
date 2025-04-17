@@ -2,13 +2,19 @@ import Image from "next/image";
 export default function Overview() {
   return (
     <section id="overview">
-      <div
-        className="text-center mb-12 w-full md:[80%] h-[100vh] bg-cover bg-center text-white flex items-end justify-end shadow-lg"
-        style={{ backgroundImage: `url('images/hero-vinhomes-gp.jpg')` }}
-      ></div>
-      <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-8">
+      <div className="relative w-full aspect-[16/9] md:aspect-[21/9] text-white flex items-end justify-end shadow-lg">
+        <Image
+          src="/images/hero-vinhomes-gp.jpg"
+          alt="Hotspot Map"
+          fill
+          className="object-cover object-center"
+          priority
+        />
+        {/* Nội dung nếu có */}
+      </div>
+      <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-8 mt-5">
         <div className="md:w-1/2 text-left">
-          <h2 className="text-xl font-bold text-green-700 underline">
+          <h2 className="text-base md:text-xl font-bold text-green-700 underline">
             Tổng quan dự án Vinhomes Grand Park
           </h2>
           <div className="bg-white shadow-md rounded-lg p-4 border border-green-600 mt-4">
@@ -40,7 +46,7 @@ export default function Overview() {
                 </tr>
               </tbody>
             </table>
-            <h3 className="text-lg font-bold text-green-700 mb-4">
+            <h3 className="text-base md:text-lg font-bold text-green-700 mb-4">
               Điểm nổi bật Vinhomes Grand Park
             </h3>
             <ul className="list-disc pl-6 text-gray-700 text-xs">

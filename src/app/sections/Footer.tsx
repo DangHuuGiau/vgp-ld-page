@@ -34,7 +34,7 @@ export default function Footer() {
                 ></path>
               </svg>
             </a>
-            <a href="#" aria-label="Instagram">
+            <a href="https://zalo.me/+84934348368" aria-label="Instagram">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="29"
@@ -61,7 +61,7 @@ export default function Footer() {
           </p>
           <p className="mb-2  text-xs">E: info@vinhomes.vn</p>
           <button className="bg-yellow-500  font-bold py-2 px-4 rounded  text-xs">
-            ZALO: 0375515642
+            ZALO: 0934348368
           </button>
         </div>
         <div className="text-center md:text-left  text-xs">

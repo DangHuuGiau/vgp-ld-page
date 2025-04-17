@@ -293,66 +293,6 @@ export default function Subdivision() {
           </div>
         </div>
       </div>
-      <div
-        className="relative text-white py-12 px-6 md:px-12 bg-cover bg-center"
-        style={{
-          backgroundImage: `url('images/subdivision/BG-MAS-vpg.jpg')`,
-        }}
-      >
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center relative z-10">
-          <div className="md:w-1/2 space-y-2">
-            <div className="mb-4">
-              <div className="flex gap-4">
-                <Image
-                  src="/images/subdivision/mcp-x-lumier-logo-vgp.webp"
-                  alt="The Origami"
-                  width={100}
-                  height={100}
-                  className="inline-block"
-                />
-                <div className="border"></div>
-                <div className="italic">
-                  <h2 className="text-xl font-bold mt-2 text-yellow-700">
-                    MASTERISE HOMES
-                  </h2>
-                  <p className="text-sm font-semibold text-yellow-700">
-                    Phân khu compound tại đại đô thị Vinhomes Grand Park
-                  </p>
-                </div>
-              </div>
-            </div>
-            <p className="text-yellow-800 text-xs">
-              Căn hộ Masterise Homes là tên gọi chung của phân khu compound duy
-              nhất tại đại đô thị Vinhomes Grand Park - Masteri Centre Point &
-              LUMIÈRE Boulevard
-            </p>
-            <p className="text-yellow-800 text-xs">
-              Dự án quy tụ cộng đồng cư dân tinh hoa về đây tận hưởng không gian
-              “sống sang” với nhiều giá trị đẳng cấp: thiết kế và tiện ích như
-              resort, vị trí trung tâm tiện nghi đầy đủ, tầm view tuyệt đẹp và
-              quy tụ cộng đồng cư dân văn minh, thành đạt.
-            </p>
-            <div className="border"></div>
-            <p className=" text-yellow-800 text-xs">
-              Giá bán: Từ 4 - 6 tỷ/căn cùng nhiều ưu đãi hấp dẫn, mua nhận nhà
-              ngay rất đáng để khách hàng cân nhắc.
-            </p>
-            <div className="mt-6 flex space-x-4">
-              <button className="bg-yellow-500 text-red-700 font-bold py-2 px-4 rounded text-sm">
-                ĐĂNG KÝ TƯ VẤN DỰ ÁN
-              </button>
-            </div>
-          </div>
-          <div className="md:w-1/2 flex justify-center mt-6 md:mt-0 ">
-            <Image
-              src="/images/subdivision/MASTERISE-vpg.webp"
-              alt="The Origami Overview"
-              width={600}
-              height={400}
-            />
-          </div>
-        </div>
-      </div>
     </section>
   );
 }

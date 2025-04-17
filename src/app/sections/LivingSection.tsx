@@ -4,7 +4,7 @@ export default function LivingSection() {
   return (
     <section className="bg-green-900 text-white p-4">
       <div className="max-w-7xl mx-auto py-12 px-6 md:px-52">
-        <h2 className="text-xl font-bold mb-6">
+        <h2 className="text-base md:text-xl font-bold mb-6">
           Sống một đời thật đáng tại Vinhomes Grand Park
         </h2>
         <p className="mb-6 text-xs">
