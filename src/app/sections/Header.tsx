@@ -44,7 +44,7 @@ export default function Header() {
           Tổng thể
         </Link>
         <Link href="#contact" className="hover:text-amber-600 hover:underline">
-          Tư vấn
+          Liên Hệ
         </Link>
       </nav>
       <button className="md:hidden text-white">☰</button>
