@@ -4,7 +4,6 @@ import "./globals.css";
 import Header from "./sections/Header";
 import Footer from "./sections/Footer";
 import Head from "next/head";
-import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -93,18 +92,6 @@ export default function RootLayout({
             ],
           })}
         </script>
-        <Script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=AW-17016219934"
-        />
-        <Script id="gtag-init" strategy="afterInteractive">
-          {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'AW-17016219934');
-        `}
-        </Script>
       </Head>
 
       <body
