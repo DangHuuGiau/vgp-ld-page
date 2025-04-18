@@ -105,6 +105,17 @@ export default function RootLayout({
             `,
           }}
         ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+               gtag('event', 'conversion', {
+              'send_to': 'AW-17016219934/fgOZCMHPgLoaEJ7S-7E_',
+              'value': 1.0,
+              'currency': 'VND'
+              });
+            `,
+          }}
+        ></script>
       </head>
 
       <body
