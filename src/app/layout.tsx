@@ -3,7 +3,6 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "./sections/Header";
 import Footer from "./sections/Footer";
-import Head from "next/head";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -33,7 +32,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="vi">
-      <Head>
+      <head>
         <meta charSet="UTF-8" />
         <meta name="robots" content="index, follow, max-image-preview:large" />
         <meta name="author" content="Vinhomes Grand Park" />
@@ -106,7 +105,7 @@ export default function RootLayout({
             `,
           }}
         ></script>
-      </Head>
+      </head>
 
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
