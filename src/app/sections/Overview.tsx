@@ -55,8 +55,8 @@ export default function Overview() {
             <ul className="list-disc pl-6 text-gray-700 text-xs">
               <li className="mb-2">
                 <span className="font-bold">Vị trí tiềm năng:</span> Căn hộ Vinhomes Grand Park Quận 9
-                sở hữu "tọa độ vàng" của một dự án bất động sản đẳng cấp
-                tại Thành phố Thủ Đức, "cận giang, cận lộ". Với địa thế phong thủy
+                sở hữu &quot;tọa độ vàng&quot; của một dự án bất động sản đẳng cấp
+                tại Thành phố Thủ Đức, &quot;cận giang, cận lộ&quot;. Với địa thế phong thủy
                 tuyệt đẹp mang tài lộc và may mắn, 2 mặt giáp sông gồm sông
                 Tắc và sông Đồng Nai, mang đến không gian sinh thái hài hòa với thiên
                 nhiên, lý tưởng cho cư dân thành phố.
