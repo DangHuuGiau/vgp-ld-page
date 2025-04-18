@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "./sections/Header";
 import Footer from "./sections/Footer";
 import Head from "next/head";
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -19,9 +20,10 @@ export const metadata: Metadata = {
   title: "Vinhomes Grand Park Quận 9 | Căn Hộ Đại Đô Thị Đẳng Cấp Quốc Tế",
   description:
     "Tư vấn mua bán, cho thuê căn hộ Vinhomes Grand Park Quận 9 chính chủ ✓ Giá tốt nhất thị trường ✓ Hỗ trợ vay ngân hàng ✓ Pháp lý đầy đủ ✓ Liên hệ ngay!",
-  keywords: "Vinhomes Grand Park, căn hộ Vinhomes Quận 9, mua bán căn hộ Vinhomes, tư vấn Vinhomes Grand Park, bất động sản Thủ Đức, chung cư Vinhomes, nhà ở Vinhomes",
+  keywords:
+    "Vinhomes Grand Park, căn hộ Vinhomes Quận 9, mua bán căn hộ Vinhomes, tư vấn Vinhomes Grand Park, bất động sản Thủ Đức, chung cư Vinhomes, nhà ở Vinhomes",
   alternates: {
-    canonical: 'https://vinhome-quan9.info.vn/'
+    canonical: "https://vinhome-quan9.info.vn/",
   },
 };
 
@@ -37,7 +39,10 @@ export default function RootLayout({
         <meta name="robots" content="index, follow, max-image-preview:large" />
         <meta name="author" content="Vinhomes Grand Park" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="keywords" content="Vinhomes Grand Park, căn hộ Vinhomes Quận 9, mua bán căn hộ Vinhomes, tư vấn Vinhomes Grand Park, bất động sản Thủ Đức" />
+        <meta
+          name="keywords"
+          content="Vinhomes Grand Park, căn hộ Vinhomes Quận 9, mua bán căn hộ Vinhomes, tư vấn Vinhomes Grand Park, bất động sản Thủ Đức"
+        />
         <meta name="geo.region" content="VN-SG" />
         <meta name="geo.placename" content="Quận 9, Thành phố Thủ Đức" />
         <meta name="geo.position" content="10.842222;106.829636" />
@@ -52,7 +57,10 @@ export default function RootLayout({
         />
         <meta property="og:url" content="https://vinhome-quan9.info.vn/" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://vinhome-quan9.info.vn/images/hero-vinhomes-gp.webp" />
+        <meta
+          property="og:image"
+          content="https://vinhome-quan9.info.vn/images/hero-vinhomes-gp.webp"
+        />
         <meta name="twitter:card" content="summary_large_image" />
         <link rel="canonical" href="https://vinhome-quan9.info.vn/" />
         <link rel="icon" href="/favicon.ico" />
@@ -63,27 +71,40 @@ export default function RootLayout({
             name: "Vinhomes Grand Park Quận 9",
             url: "https://vinhome-quan9.info.vn",
             logo: "https://vinhome-quan9.info.vn/_next/image?url=%2Fimages%2Fvinhomes-gp-logo.png&w=256&q=75",
-            description: "Tư vấn mua bán, cho thuê căn hộ Vinhomes Grand Park Quận 9 chính chủ với giá tốt nhất thị trường. Hỗ trợ vay ngân hàng, pháp lý đầy đủ.",
+            description:
+              "Tư vấn mua bán, cho thuê căn hộ Vinhomes Grand Park Quận 9 chính chủ với giá tốt nhất thị trường. Hỗ trợ vay ngân hàng, pháp lý đầy đủ.",
             address: {
               "@type": "PostalAddress",
               streetAddress: "Đường Nguyễn Xiển",
               addressLocality: "Quận 9",
               addressRegion: "TP. Thủ Đức",
               postalCode: "700000",
-              addressCountry: "VN"
+              addressCountry: "VN",
             },
             contactPoint: {
               "@type": "ContactPoint",
               telephone: "+84-0375-515-642",
               contactType: "sales",
-              availableLanguage: "Vietnamese"
+              availableLanguage: "Vietnamese",
             },
             sameAs: [
               "https://facebook.com/vinhomesgrandpark.official",
-              "https://youtube.com/c/vinhomesgrandpark"
-            ]
+              "https://youtube.com/c/vinhomesgrandpark",
+            ],
           })}
         </script>
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=AW-17016219934"
+        />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'AW-17016219934');
+        `}
+        </Script>
       </Head>
 
       <body
