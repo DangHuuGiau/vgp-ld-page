@@ -8,7 +8,7 @@ export default function Subdivision(props: Props) {
 
   return (
     <section id="subdivision">
-      <div className="md:px-52 mb-10">
+      <div className="md:px-52 my-10">
         <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="md:w-1/2 text-left">
             <h2 className="text-xl font-bold text-green-700 underline">
