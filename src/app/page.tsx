@@ -20,7 +20,7 @@ export default function Home() {
       <LivingSection />
       <RegistrationForm />
       <HotspotMap />
-      <Subdivision open={showForm} setOpen={setShowForm} />
+      <Subdivision setOpen={setShowForm} />
       <LandscapeUtilities />
       <RegistrationForm />
       <MasterPlan />  

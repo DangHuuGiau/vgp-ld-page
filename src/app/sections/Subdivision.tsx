@@ -1,11 +1,10 @@
 import Image from "next/image";
 
 interface Props {
-  open: boolean;
   setOpen: (open: boolean) => void;
 }
 export default function Subdivision(props: Props) {
-  const { open, setOpen } = props;
+  const { setOpen } = props;
 
   return (
     <section id="subdivision">
