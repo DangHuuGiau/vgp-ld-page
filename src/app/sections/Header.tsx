@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-// Replace with the actual logo file path
+import { PhoneIcon } from '@heroicons/react/24/solid';
 
 export default function Header() {
   return (
@@ -21,7 +21,7 @@ export default function Header() {
           </span>
         </div>
       </div>
-      <nav className="hidden md:flex space-x-4 text-black font-semibold text-sm text-yellow-700">
+      <nav className="hidden md:flex space-x-6  font-semibold text-sm text-yellow-700 uppercase items-center">
         <Link href="#overview" className="hover:text-amber-600 hover:underline">
           Tổng quan
         </Link>
@@ -46,8 +46,13 @@ export default function Header() {
         <Link href="#contact" className="hover:text-amber-600 hover:underline">
           Liên Hệ
         </Link>
+        <a href="tel:+84934348368" className="bg-yellow-600 p-2 rounded-full text-white flex items-center gap-2 text-base">
+          <PhoneIcon className="h-5 w-5 text-white" />
+          0934348368
+        </a>
       </nav>
+
       <button className="md:hidden text-white">☰</button>
     </header>
   );
-}
+} 

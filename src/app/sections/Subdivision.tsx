@@ -1,7 +1,14 @@
 import Image from "next/image";
-export default function Subdivision() {
+
+interface Props {
+  open: boolean;
+  setOpen: (open: boolean) => void;
+}
+export default function Subdivision(props: Props) {
+  const { open, setOpen } = props;
+
   return (
-    <section id="subdivision" className="my-10">
+    <section id="subdivision">
       <div className="md:px-52 mb-10">
         <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="md:w-1/2 text-left">
@@ -88,7 +95,7 @@ export default function Subdivision() {
               </li>
             </ul>
             <div className="mt-6 flex space-x-4">
-              <button className="bg-yellow-500 text-red-700 font-bold py-2 px-4 rounded text-sm">
+              <button className="bg-yellow-500 text-red-700 font-bold py-2 px-4 rounded text-sm" onClick={() => setOpen(true)}>
                 NHẬN BÁO GIÁ TẠI ĐÂY
               </button>
             </div>
@@ -147,7 +154,7 @@ export default function Subdivision() {
             <div className="border"></div>
             <p className=" text-stone-200 text-xs">Giá bán: Từ 3,5 tỷ/căn</p>
             <div className="mt-6 flex space-x-4">
-              <button className="bg-yellow-500 text-red-700 font-bold py-2 px-4 rounded text-sm">
+              <button className="bg-yellow-500 text-red-700 font-bold py-2 px-4 rounded text-sm" onClick={() => setOpen(true)}>
                 NHẬN BÁO GIÁ TẠI ĐÂY
               </button>
             </div>
@@ -212,7 +219,7 @@ export default function Subdivision() {
               Giá bán: Từ 4,1 tỷ/căn (chưa trừ ưu đãi)
             </p>
             <div className="mt-6 flex space-x-4">
-              <button className="bg-yellow-500 text-red-700 font-bold py-2 px-4 rounded text-sm">
+              <button className="bg-yellow-500 text-red-700 font-bold py-2 px-4 rounded text-sm" onClick={() => setOpen(true)}>
                 ĐĂNG KÝ TƯ VẤN DỰ ÁN
               </button>
             </div>
@@ -278,7 +285,7 @@ export default function Subdivision() {
               <li className="mb-2">Giá bán: Từ 4,4 tỷ/căn (chưa trừ ưu đãi)</li>
             </ul>
             <div className="mt-6 flex space-x-4">
-              <button className="bg-yellow-500 text-red-700 font-bold py-2 px-4 rounded text-sm">
+              <button className="bg-yellow-500 text-red-700 font-bold py-2 px-4 rounded text-sm" onClick={() => setOpen(true)}>
                 ĐĂNG KÝ TƯ VẤN DỰ ÁN
               </button>
             </div>

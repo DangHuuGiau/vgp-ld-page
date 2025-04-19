@@ -1,3 +1,5 @@
+'use client'
+
 import Overview from "./sections/Overview";
 import Subdivision from "./sections/Subdivision";
 import LandscapeUtilities from "./sections/LandscapeUtilities";
@@ -8,20 +10,22 @@ import Contact from "./sections/Contact";
 import DelayedContactForm from "./sections/FormContact";
 import HotspotMap from "./sections/HotspotMap";
 import FloatingButtons from "./sections/CallButtons";
+import { useState } from "react";
 
 export default function Home() {
+  const [showForm, setShowForm] = useState(false);
   return (
     <div>
       <Overview />
       <LivingSection />
       <RegistrationForm />
       <HotspotMap />
-      <Subdivision />
+      <Subdivision open={showForm} setOpen={setShowForm} />
       <LandscapeUtilities />
       <RegistrationForm />
-      <MasterPlan />
+      <MasterPlan />  
       <Contact />
-      <DelayedContactForm />
+      <DelayedContactForm  open={showForm} setOpen={setShowForm}/>
       <FloatingButtons />
     </div>
   );

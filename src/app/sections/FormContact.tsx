@@ -2,8 +2,13 @@
 
 import { useEffect, useState } from "react";
 
-export default function DelayedContactForm() {
-  const [showForm, setShowForm] = useState(false);
+interface Props {
+  open: boolean;
+  setOpen: (open: boolean) => void;
+}
+
+export default function DelayedContactForm(props: Props) {
+  const { open, setOpen } = props;   
   const [formData, setFormData] = useState({
     fullName: "",
     phone: "",
@@ -12,14 +17,14 @@ export default function DelayedContactForm() {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setShowForm(true);
+      setOpen(true);
     }, 10000);
 
     return () => clearTimeout(timer);
   }, []);
 
   const handleClose = () => {
-    setShowForm(false);
+    setOpen(false);
   };
 
   const handleChange = (
@@ -55,7 +60,7 @@ export default function DelayedContactForm() {
     }
   };
 
-  if (!showForm) return null;
+  if (!open) return null;
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/30 animate-fadeIn">
@@ -74,11 +79,11 @@ export default function DelayedContactForm() {
         <h3 className="text-xl font-semibold mb-4 text-center text-white">
           Đăng kí nhận tư vấn miễn phí
         </h3>
-        <p className="text-xs mb-6 text-center text-white">
+        <p className="text-xs mb-6 text-center text-white md:text-sm">
           Đăng ký ngay để được hỗ trợ tham quan thực tế dự án Vinhomes Grand
           Park và chọn cho mình căn hộ ưng ý nhất, an cư lạc nghiệp lâu dài.
         </p>
-        <form onSubmit={handleSubmit} className="space-y-4 text-xs text-white">
+        <form onSubmit={handleSubmit} className="space-y-4 text-xs text-white md:text-sm">
           <input
             type="text"
             name="fullName"

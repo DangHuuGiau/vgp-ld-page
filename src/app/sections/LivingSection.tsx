@@ -7,13 +7,13 @@ export default function LivingSection() {
         <h2 className="text-base md:text-xl font-bold mb-6">
           Sống một đời thật đáng tại Vinhomes Grand Park
         </h2>
-        <p className="mb-6 text-xs">
+        <p className="mb-6 text-xs md:text-sm">
           Ở Vinhomes Grand Park, nhà không chỉ tính bằng m², mà đó là nơi để cảm
           nhận cuộc sống đúng nghĩa. Từ không gian đến nhịp sống đều phù hợp cho
           tất cả các thành viên trong gia đình. Mua nhà với những giá trị đi kèm
           mà hiếm nơi nào ở TP. HCM có được:
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-xs">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-xs md:text-sm">
           <div className="bg-green-800 p-4 rounded">
             <h3 className="font-bold  mb-2">Sống xanh</h3>
             <p>

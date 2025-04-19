@@ -23,14 +23,14 @@ export default function LandscapeUtilities() {
               <h2 className="text-xl font-bold text-green-700 underline">
                 ĐẶC QUYỀN DÀNH RIÊNG CƯ DÂN
               </h2>
-              <p className="text-gray-700 text-xs mb-4">
+              <p className="text-gray-700 text-xs mb-4 md:text-sm">
                 Đặc quyền lớn nhất của cư dân Vinhomes Grand Park có thể nói
                 chính là sở hữu tổ ấm trong một đại đô thị “đáng sống”. Đáng
                 sống ở đây không chỉ dừng lại ở việc đáp ứng đầy đủ các nhu cầu
                 của cư dân từ giáo dục, y tế, mua sắm, vui chơi giải trí,... mà
                 luôn đảm bảo chất lượng cuộc sống cư dân luôn ở mức cao.
               </p>
-              <p className="text-gray-700 text-xs mb-4">
+              <p className="text-gray-700 text-xs mb-4 md:text-sm">
                 Anh/chị sẽ không tìm đâu 1 căn chung cư tại Thủ Đức có hệ tiện
                 ích đẳng cấp như Vinhomes Grand Park. Ngay bên cạnh nhà của cư
                 dân là hệ thống tiện ích đa dạng tiêu chuẩn quốc tế đến từ Tập

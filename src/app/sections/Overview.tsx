@@ -21,7 +21,7 @@ export default function Overview() {
             Tổng quan dự án Vinhomes Grand Park
           </h2>
           <div className="bg-white shadow-md rounded-lg p-4 border border-green-600 mt-4">
-            <table className="w-full text-left text-gray-700 mb-6 text-xs">
+            <table className="w-full text-left text-gray-700 mb-6 text-sm md:text-base">
               <tbody>
                 <tr className="border-b border-gray-300">
                   <td className="font-bold py-2">Tên dự án</td>
@@ -52,7 +52,7 @@ export default function Overview() {
             <h3 className="text-base md:text-lg font-bold text-green-700 mb-4">
               Điểm nổi bật Vinhomes Grand Park
             </h3>
-            <ul className="list-disc pl-6 text-gray-700 text-xs">
+            <ul className="list-disc pl-6 text-gray-700 text-sm md:text-base">
               <li className="mb-2">
                 <span className="font-bold">Vị trí tiềm năng:</span> Căn hộ Vinhomes Grand Park Quận 9
                 sở hữu &quot;tọa độ vàng&quot; của một dự án bất động sản đẳng cấp
@@ -82,17 +82,38 @@ export default function Overview() {
               </li>
             </ul>
           </div>
+          <div className="border-l-4 border-yellow-400 shadow-lg p-4 mb-2 animate-pulse-slow rounded-lg mt-5">
+            <h3 className="text-lg md:text-xl font-bold text-yellow-600 mb-2 flex items-center gap-2">
+              <span role="img" aria-label="ưu đãi">🎉</span> Ưu Đãi Đặc Biệt Chỉ Có Tại Vinhomes Grand Park!
+            </h3>
+            <ul className="list-disc pl-6 text-sm md:text-base text-gray-800 mb-2">
+              <li className="mb-1"><span role="img" aria-label="căn hộ mới">👋</span> <b>Căn hộ mới liền kề Vincom lớn nhất miền Nam</b> chỉ từ <span className="text-green-700 font-bold">2.1 tỷ/căn</span></li>
+              <li className="mb-1"><span role="img" aria-label="quà tặng">🎁</span> <b>Tặng Xe Vinfast VF3</b> - Quà tặng chiết khấu đến <span className="text-red-600 font-bold">2.5 tỷ</span> (Số lượng giới hạn)</li>
+              <li className="mb-1"><span role="img" aria-label="ưu đãi">✨</span> <b>Tặng gói tân gia lên tới 540 triệu đồng</b></li>
+              <li className="mb-1"><span role="img" aria-label="doanh nghiệp">🏢</span> <b>Ưu đãi thêm cho KH Doanh nghiệp, cư dân Thủ Đức:</b> <span className="text-green-700 font-bold">3%</span></li>
+              <li className="mb-1"><span role="img" aria-label="vinclub">💳</span> <b>Ưu đãi hội viên VinClub:</b> <span className="text-green-700 font-bold">1,7%</span></li>
+              <li className="mb-1"><span role="img" aria-label="chuyển khoản">💸</span> <b>Ưu đãi dành cho KH chuyển khoản:</b> <span className="text-green-700 font-bold">đến 20.3%</span></li>
+              <li className="mb-1"><span role="img" aria-label="ngân hàng">🏦</span> <b>Ngân hàng hỗ trợ vay</b> <span className="text-green-700 font-bold">70-80%</span>, HTLS 0% <span className="font-bold">18-24 tháng đầu</span></li>
+            </ul>
+            <div className="text-sm md:text-base text-gray-900 mb-1 font-semibold">✅ Các loại hình căn hộ:</div>
+            <ul className="list-disc pl-8 text-sm md:text-base text-gray-700">
+              <li>Studio: 30-34m²</li>
+              <li>Căn 1PN: 46.5-54m²</li>
+              <li>Căn 2PN: 59-80m²</li>
+              <li>Căn 3PN: 82-100m²</li>
+            </ul>
+            <div className="mt-3 text-xs text-gray-500 italic">Nhanh tay liên hệ để nhận ưu đãi giới hạn và tư vấn chi tiết!</div>
+          </div>
         </div>
-        <div className="md:w-1/2">
+        <div className="md:w-1/2 flex flex-col gap-6">
           <figure>
             <Image
               src="/images/hinh-tong-quan-vgp.webp"
               alt="Tổng quan dự án Vinhomes Grand Park Quận 9"
-              width={600}
-              height={400}
-              className="w-full h-auto rounded-lg shadow-md"
+              width={500}
+              height={300}
+              className="w-full h-auto"
             />
-            <figcaption className="text-xs text-center mt-2 text-gray-600">Phối cảnh tổng thể dự án Vinhomes Grand Park Quận 9</figcaption>
           </figure>
           <div className="mt-4 p-3 bg-green-50 border border-green-100 rounded-md">
             <h4 className="text-sm font-bold text-green-700 mb-2">Dịch vụ tư vấn mua bán căn hộ Vinhomes Grand Park</h4>

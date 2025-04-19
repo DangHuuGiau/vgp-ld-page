@@ -51,13 +51,13 @@ export default function RegistrationForm() {
           Đăng ký tham quan, chiêm ngưỡng nhịp sống sôi động tại đại đô thị đáng
           sống bậc nhất Sài Gòn
         </h2>
-        <p className="text-xs mb-6">
+        <p className="text-xs mb-6 md:text-sm">
           Và nhận ngay giỏ hàng chính thức từ Chủ đầu tư, được ưu đãi khủng - Số
           lượng giới hạn - Đừng bỏ lỡ!
         </p>
         <form
           onSubmit={handleSubmit}
-          className="grid grid-cols-1 md:grid-cols-4 gap-4 text-xs"
+          className="grid grid-cols-1 md:grid-cols-4 gap-4 text-xs md:text-sm"
         >
           <input
             type="text"
