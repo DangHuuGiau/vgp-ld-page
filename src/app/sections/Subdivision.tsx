@@ -55,7 +55,7 @@ export default function Subdivision(props: Props) {
       >
         <div className="absolute inset-0 bg-black opacity-50 z-0" />
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center relative z-10">
-          <div className="md:w-1/2">
+          <div className="md:w-1/2 space-y-2">
             <div className="mb-4">
               <div className="flex gap-4">
                 <Image
@@ -70,6 +70,9 @@ export default function Subdivision(props: Props) {
                   <h2 className="text-xl font-bold mt-2 ">THE ORIGAMI</h2>
                   <p className="text-sm font-semibold text-w-500">
                     Căn hộ Vinhomes giá tốt nhất thị trường
+                  </p>
+                  <p className="text-sm font-semibold text-w-500">
+                    Giá chỉ từ 48tr/m2
                   </p>
                 </div>
               </div>
@@ -93,6 +96,8 @@ export default function Subdivision(props: Props) {
                 thao, công viên nội khu, hồ cá Koi...
               </li>
             </ul>
+            <div className="border"></div>
+            <p className="italic text-base font-bold animate-glow-text text-yellow-400">Giá chỉ từ 48tr/m2 - Chiết Khấu đến 25%</p>
             <div className="mt-6 flex space-x-4">
               <button className="bg-yellow-500 text-red-700 font-bold py-2 px-4 rounded text-sm" onClick={() => setOpen(true)}>
                 NHẬN BÁO GIÁ TẠI ĐÂY
@@ -134,6 +139,9 @@ export default function Subdivision(props: Props) {
                   <p className="text-sm font-semibold text-yellow-500">
                     Phân khu trung tâm có mức giá tốt nhất
                   </p>
+                  <p className="text-sm font-semibold text-yellow-500">
+                    Giá chỉ từ 52tr/m2
+                  </p>
                 </div>
               </div>
             </div>
@@ -147,11 +155,10 @@ export default function Subdivision(props: Props) {
               Nằm ở khu vực trung tâm sầm uất, quy tụ đầy đủ các tiện ích từ
               giáo dục - giải trí - y tế nhưng The Solari lại có mức giá rất
               tốt. Đây chính là lựa chọn dành cho những gia đình muốn tận hưởng
-              một cuộc sống tiện nghi, chất lượng với mức tài chính hợp lý. Giá
-              bán: Từ 3,5 tỷ/căn
+              một cuộc sống tiện nghi, chất lượng với mức tài chính hợp lý.
             </p>
             <div className="border"></div>
-            <p className=" text-stone-200 text-xs">Giá bán: Từ 3,5 tỷ/căn</p>
+            <p className=" animate-glow-text text-yellow-400 text-base font-bold">Giá chỉ từ 52tr/m2 - Chiết khấu đến 17.3% + Tặng nội thất đến 200triệu</p>
             <div className="mt-6 flex space-x-4">
               <button className="bg-yellow-500 text-red-700 font-bold py-2 px-4 rounded text-sm" onClick={() => setOpen(true)}>
                 NHẬN BÁO GIÁ TẠI ĐÂY
@@ -193,6 +200,9 @@ export default function Subdivision(props: Props) {
                   <p className="text-sm font-semibold text-yellow-500">
                     Phân khu cao cấp view đẹp nhất Vinhomes Grand Park
                   </p>
+                  <p className="text-sm font-semibold text-yellow-500">
+                  Giá chỉ từ 65tr/m2
+                  </p>
                 </div>
               </div>
             </div>
@@ -214,8 +224,8 @@ export default function Subdivision(props: Props) {
               bàn giao ngay.
             </p>
             <div className="border"></div>
-            <p className=" text-stone-200 text-xs">
-              Giá bán: Từ 4,1 tỷ/căn (chưa trừ ưu đãi)
+            <p className=" animate-glow-text text-yellow-400 text-base font-bold">
+            Giá chỉ từ 65tr/m2 - Chiết Khấu đến 15% + Tặng nội thất đến 540 triệu
             </p>
             <div className="mt-6 flex space-x-4">
               <button className="bg-yellow-500 text-red-700 font-bold py-2 px-4 rounded text-sm" onClick={() => setOpen(true)}>
@@ -226,6 +236,63 @@ export default function Subdivision(props: Props) {
           <div className="md:w-1/2 flex justify-center mt-6 md:mt-0 ">
             <Image
               src="/images/subdivision/THE-BEVERLY-vgp.webp"
+              alt="The Origami Overview"
+              width={600}
+              height={400}
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        className="relative text-white py-12 px-6 md:px-12 bg-cover bg-center"
+        style={{
+          backgroundImage: `url('images/subdivision/BG-vgp.jpg')`,
+        }}
+      >
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center relative z-10">
+          <div className="md:w-1/2 space-y-2">
+            <div className="mb-4">
+              <div className="flex gap-4">
+                <Image
+                  src="/images/subdivision/glory-vang.png"
+                  alt="The Glory Heights Logo"
+                  width={100}
+                  height={100}
+                  className="inline-block"
+                />
+                <div className="border"></div>
+                <div className="italic">
+                  <h2 className="text-xl font-bold mt-2 text-yellow-500">
+                    THE GLORY HEIGHTS
+                  </h2>
+                  <p className="text-sm font-semibold text-yellow-500">
+                    Phân khu biểu tượng mới tại Vinhomes Grand Park - Nơi hội tụ tinh hoa sống đỉnh cao
+                  </p>
+                  <p className="text-sm font-semibold text-yellow-500">
+                  Giá chỉ từ 60tr/m2
+                  </p>
+                </div>
+              </div>
+            </div>
+            <p className="text-stone-200 text-xs">
+            The Glory Heights là phân khu căn hộ cao cấp mới nhất, sở hữu vị trí "kim cương" ngay trung tâm đô thị Vinhomes Grand Park, liền kề công viên 36ha và hướng thẳng ra sông Đồng Nai thơ mộng.
+            </p>
+            <p className="text-stone-200 text-xs">
+            Với thiết kế hiện đại, sang trọng và mang đậm dấu ấn tinh tế, The Glory Heights không chỉ là nơi an cư mà còn là biểu tượng sống đẳng cấp giữa lòng đại đô thị.
+            </p>
+            <div className="border"></div>
+            <p className=" animate-glow-text text-yellow-400 text-base font-bold">
+              Giá chỉ từ 60tr/m2 - Chiết khấu đến 23.5% + Tặng nội thất đến 200triệu
+            </p>
+            <div className="mt-6 flex space-x-4">
+              <button className="bg-yellow-500 text-red-700 font-bold py-2 px-4 rounded text-sm" onClick={() => setOpen(true)}>
+                ĐĂNG KÝ TƯ VẤN DỰ ÁN
+              </button>
+            </div>
+          </div>
+          <div className="md:w-1/2 flex justify-center mt-6 md:mt-0 ">
+            <Image
+              src="/images/subdivision/MASTERISE-vpg.webp"
               alt="The Origami Overview"
               width={600}
               height={400}

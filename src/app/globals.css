@@ -69,3 +69,12 @@ p {
 .animate-wave {
   animation: wave 2s ease-out infinite;
 }
+
+@keyframes glow-text {
+  0% { text-shadow: 0 0 5px #facc15; }
+  50% { text-shadow: 0 0 15px #facc15; }
+  100% { text-shadow: 0 0 5px #facc15; }
+}
+.animate-glow-text {
+  animation: glow-text 1.2s ease-in-out infinite;
+}

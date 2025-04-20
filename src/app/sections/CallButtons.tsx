@@ -2,7 +2,7 @@
 import Image from "next/image";
 export default function FloatingButtons() {
   return (
-    <div>
+    <div >
       {/* Nút gọi điện */}
       <a
         href="tel:+84934348368"
@@ -25,7 +25,7 @@ export default function FloatingButtons() {
         href="https://zalo.me/+84934348368"
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed bottom-16 right-4 bg-blue-600 text-white p-2 rounded-full shadow-lg flex items-center justify-center hover:bg-blue-700 transition group z-50"
+        className="fixed bottom-20 right-4 bg-blue-600 text-white p-2 rounded-full shadow-lg flex items-center justify-center hover:bg-blue-700 transition group z-50"
         aria-label="Zalo"
       >
         {/* Sóng tỏa */}
@@ -37,6 +37,16 @@ export default function FloatingButtons() {
           height={24}
           className="z-10 animate-tilt"
         />
+      </a>
+
+      <a
+        href="tel:+84934348368"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-2 left-10 bg-red-600 text-white p-2 rounded-full shadow-lg flex items-center justify-center transition group z-50 animate-pulse"
+        aria-label="Gọi điện hotline 0934348368"
+      >
+        <p className="font-bold italic text-xs md:text-sm">Hotline: 0934348368</p>
       </a>
     </div>
   );
