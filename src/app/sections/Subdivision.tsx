@@ -275,7 +275,7 @@ export default function Subdivision(props: Props) {
               </div>
             </div>
             <p className="text-stone-200 text-xs">
-            The Glory Heights là phân khu căn hộ cao cấp mới nhất, sở hữu vị trí "kim cương" ngay trung tâm đô thị Vinhomes Grand Park, liền kề công viên 36ha và hướng thẳng ra sông Đồng Nai thơ mộng.
+            The Glory Heights là phân khu căn hộ cao cấp mới nhất, sở hữu vị trí kim cương ngay trung tâm đô thị Vinhomes Grand Park, liền kề công viên 36ha và hướng thẳng ra sông Đồng Nai thơ mộng.
             </p>
             <p className="text-stone-200 text-xs">
             Với thiết kế hiện đại, sang trọng và mang đậm dấu ấn tinh tế, The Glory Heights không chỉ là nơi an cư mà còn là biểu tượng sống đẳng cấp giữa lòng đại đô thị.
