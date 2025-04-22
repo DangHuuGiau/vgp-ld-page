@@ -23,6 +23,7 @@ export default function SuccessPage() {
     `;
     document.head.appendChild(script);
 
+
     const noscript = document.createElement('noscript');
     noscript.innerHTML = `
       <img height="1" width="1" style="display:none"

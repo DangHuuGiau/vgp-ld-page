@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import { google } from 'googleapis';
 
 // Cấu hình Google Sheets API
-async function appendToSheet(data: any) {
+async function appendToSheet(data: { fullName: string; phone: string; productInterest?: string }) {
   try {
     // Lấy thông tin service account từ biến môi trường
     // Bạn sẽ cần thêm các biến này vào .env.local
