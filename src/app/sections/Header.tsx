@@ -48,7 +48,7 @@ export default function Header() {
         </Link>
         <a href="tel:+84934348368" className="bg-yellow-600 p-2 rounded-full text-white flex items-center gap-2 text-base">
           <PhoneIcon className="h-5 w-5 text-white" />
-          0934348368
+          0375515642
         </a>
       </nav>
 

@@ -61,7 +61,7 @@ export default function Footer() {
           </p>
           <p className="mb-2  text-xs">E: info@vinhomes.vn</p>
           <button className="bg-yellow-500  font-bold py-2 px-4 rounded  text-xs">
-            ZALO: 0934348368
+            ZALO: 0375515642
           </button>
         </div>
         <div className="text-center md:text-left  text-xs">

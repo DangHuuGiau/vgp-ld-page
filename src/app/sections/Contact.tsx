@@ -1,8 +1,11 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 export default function Contact() {
+  const router = useRouter();
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     fullName: "",
     phone: "",
@@ -25,12 +28,10 @@ export default function Contact() {
 
       const data = await res.json();
       if (res.ok) {
-        alert(
-          "Cảm ơn thông tin của anh chị, chuyên viên tư vấn sẽ kết nối hỗ trợ chi tiết dự án đến anh chị nhé ạ!"
-        );
-        setFormData({ fullName: "", phone: "" });
+        router.push("/success");
       } else {
         alert("Gửi thất bại: " + data.error);
+        setIsSubmitting(false);
       }
     } catch (err) {
       console.error(err);
@@ -78,7 +79,7 @@ export default function Contact() {
             type="submit"
             className="bg-yellow-500 text-white font-bold py-3 px-6 rounded hover:bg-yellow-600 transition"
           >
-            GỬI THÔNG TIN
+            {isSubmitting ? "ĐANG XỬ LÝ..." : "NHẬN THÔNG TIN"}
           </button>
         </form>
       </div>

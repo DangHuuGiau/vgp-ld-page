@@ -44,9 +44,9 @@ export default function FloatingButtons() {
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-2 left-10 bg-red-600 text-white p-2 rounded-full shadow-lg flex items-center justify-center transition group z-50 animate-pulse"
-        aria-label="Gọi điện hotline 0934348368"
+        aria-label="Gọi điện hotline 0375515642"
       >
-        <p className="font-bold italic text-xs md:text-sm">Hotline: 0934348368</p>
+        <p className="font-bold italic text-xs md:text-sm">Hotline: 0375515642</p>
       </a>
     </div>
   );

@@ -1,8 +1,11 @@
-"use client"; // nếu bạn dùng Next.js 13+ với App Router
+"use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 export default function RegistrationForm() {
+  const router = useRouter();
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     fullName: "",
     phone: "",
@@ -17,6 +20,7 @@ export default function RegistrationForm() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setIsSubmitting(true);
 
     try {
       const res = await fetch("/api/register", {
@@ -29,15 +33,15 @@ export default function RegistrationForm() {
 
       const data = await res.json();
       if (res.ok) {
-        alert(
-          "Cảm ơn thông tin của anh chị, chuyên viên tư vấn sẽ kết nối hỗ trợ chi tiết dự án đến anh chị nhé ạ!"
-        );
+        router.push("/success");
       } else {
         alert("Gửi thất bại: " + data.error);
+        setIsSubmitting(false);
       }
     } catch (err) {
       console.error(err);
       alert("Có lỗi xảy ra khi gửi thông tin.");
+      setIsSubmitting(false);
     }
   };
 
@@ -100,8 +104,9 @@ export default function RegistrationForm() {
           <button
             type="submit"
             className="bg-yellow-500 text-white font-bold py-3 px-6 rounded"
+            disabled={isSubmitting}
           >
-            NHẬN THÔNG TIN
+            {isSubmitting ? "ĐANG XỬ LÝ..." : "NHẬN THÔNG TIN"}
           </button>
         </form>
       </div>

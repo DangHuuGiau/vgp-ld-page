@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 
 interface Props {
   open: boolean;
@@ -8,7 +9,9 @@ interface Props {
 }
 
 export default function DelayedContactForm(props: Props) {
-  const { open, setOpen } = props;   
+  const { open, setOpen } = props;
+  const router = useRouter();
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     fullName: "",
     phone: "",
@@ -47,12 +50,10 @@ export default function DelayedContactForm(props: Props) {
 
       const data = await res.json();
       if (res.ok) {
-        alert(
-          "Cảm ơn bạn đã gửi thông tin, chuyên viên tư vấn sẽ liên hệ bạn ngay."
-        );
-        handleClose();
+        router.push("/success");
       } else {
         alert("Gửi thất bại: " + data.error);
+        setIsSubmitting(false);
       }
     } catch (err) {
       console.error(err);
@@ -125,7 +126,7 @@ export default function DelayedContactForm(props: Props) {
             type="submit"
             className="w-full bg-yellow-500 text-white font-bold py-3 px-6 rounded hover:bg-yellow-600 transition"
           >
-            Gửi thông tin
+            {isSubmitting ? "ĐANG XỬ LÝ..." : "NHẬN THÔNG TIN"}
           </button>
         </form>
       </div>
